@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/34173dc253.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  
+    <section>
+      <div class = "form">
+        <div class = "credentials">
+          <form action="">
+            <h2>Login</h2>
+            <div class="inputBox">
+              <i class="fa-solid fa-user"></i>
+              <input type ="email" required id ="email">
+              <label for="">Email</label>
+            </div>
+            <br>
+            <div class="inputBox">
+              <i class="fa-solid fa-lock"></i>
+              <input type ="password" required id = "passwrd">
+              <label for="">Password</label>
+            </div>
+            <div class="forgetPassword">
+              <label for = ""><input type = "checkbox">Remember Me</label> 
+              <a href="#">Forgot Password</a>   
+            </div>
+          
+            <button onclick ="redirect()">Log in</button>
+            
+            <div class = "registerToday">
+              <p>Don't have an account? <a href = "#" target = "_blank">Register Now</a></p>
+            </div>
+          </form>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      function redirect(){
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("passwrd").value;
+        if (email == 'siddhantgupta862@gmail.com' && password == '2310992371')
+        {alert("Login Success!")
+        window.open("recipe.html");
+      }
+      else{
+        alert("Username and password don't match")
+      }
+    }
+    </script> 
+     <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+      }
+      h2{
+        text-align: center;
+        /* color: beige; */
+      }
+     section{
+      border: 2px solid black;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;  
+      background: url(wallpaperflare.com_wallpaper\ \(4\).jpg);
+      background-position: center;
+      background-size: cover; 
+     }
+     .credentials{
+      background: transparent;
+      border: 2px solid white;
+      border-radius: 20px;
+      height: 300px;
+      /* width: 300px; */
+     }
+     button{
+      margin-top: 7px;
+      margin-bottom: 7px;
+      width: 100%;
+      border-radius: 40px;
+      background: white;  
+      cursor: pointer;
+    }
+     .inputBox input {
+      background: transparent;
+      margin-top: 5px;
+      margin-bottom: 5px;
+  
+     }
+     .forgetPassword{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+     }
+     .registerToday{
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+      .forgetPassword a {
+        margin-left: 18px;
+      }
+  
+    </style>
+  </body>
+</html>

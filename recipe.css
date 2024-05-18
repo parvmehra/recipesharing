@@ -1,0 +1,199 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+
+}
+
+#Description{
+   
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+
+#desc{
+    
+    line-height: 23px;
+    opacity: 100%;
+   
+}
+
+
+#logo{
+    
+        height: 100px;
+        width: 100px;
+        position:absolute;
+        top:4px;
+        right:9px;
+        background-image:url(https://upload.wikimedia.org/wikipedia/en/a/ae/Los_Pollos_Hermanos_logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: 1px solid white;
+        border-radius: 100px;
+}
+
+#Coffee{
+    height: 300px;
+    width: 400px;
+    margin-right: 20px;
+}
+
+.recipe-card {
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.recipe-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.recipe-card h2 {
+    color: #333;
+}
+
+.author {
+    color: #0c5555;
+    margin: 20px;
+}
+
+.description {
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+
+
+.recipe_2 {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin: 20px;
+    text-align: center;
+    
+}
+
+#risotto{
+    height: 400px;
+    width: 500px;
+}
+
+
+
+
+.recipe_3 {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin: 20px;
+    text-align: center;
+    
+}
+
+#footer{
+    background-color:  #555;
+    height: 50px; background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2cm;
+}
+    
+
+.navbar {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    background-color: #0c6161;
+    overflow: hidden;
+    height: 2cm;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 65%;
+        
+}
+/* 
+.navbar li {
+    float: left;
+} */
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 40px;
+}
+
+
+.navbar li a:hover {
+    background-color: #008080;
+}
+
+#gnocchi{
+    height: 420px;
+    width: 500px;
+}
+
+.recipe_4{
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+@keyframes glowing {
+    0% { color: #fff; text-shadow: 0 0 20px rgb(192, 225, 85); }
+    50% { color: rgb(195, 255, 0); text-shadow: 0 0 10px rgb(192, 225, 85); }
+    100% { color: #fff; text-shadow: 0 0 20px rgb(192, 225, 85); }
+  }
+
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    animation-name: glowing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  } 
+.cardHolder{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    
+}
+.card{
+
+    margin-left: 40px;
+}
+.immg{
+    height: 400px;
+    width: 300px;
+
+}
